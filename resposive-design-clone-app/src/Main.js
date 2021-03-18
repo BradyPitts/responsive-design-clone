@@ -2,17 +2,17 @@ import React from 'react';
 
 function Main(){
   return (
-    <div class= 'Main'>
+    <main>
       <h3>
         Welcome To Our Studio!
       </h3>   
       <h1>
-        It's Nice To Meet You
+        IT'S NICE TO MEET YOU
       </h1> 
       <button>
-        Tell Me More
+        TELL ME MORE
       </button>
-    </div>
+    </main>
   )
 }
 
