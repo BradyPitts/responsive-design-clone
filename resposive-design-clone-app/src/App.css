@@ -41,19 +41,19 @@ nav img{
   width:15vw;
 }
 
-nav ul{
+.closed{
   display: none;
 }
 
-@keyframes slide {
-  0% {
-    transform: translate(0, 100%);
-  }
-
-  100% {
-    transform: translate(0 ,0);
-  }
+.open {
+  display: block;
+  background-color:black;
+  transform: translate(100vw);
+  width:75vw;
+  height: 100vh;
 }
+
+
 
 
 
@@ -104,6 +104,7 @@ button{
     width: 35vw;
     display: flex;
     justify-content: space-around;
+    transform: translate(100vw);
   }
 
   button{
