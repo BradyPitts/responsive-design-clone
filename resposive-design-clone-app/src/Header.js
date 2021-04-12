@@ -13,8 +13,8 @@ class Header extends Component{
   
   clickHandler = () => {
     if(this.state.menu === 'closed'){
-      this.setState({menu : 'open'})
-      console.log(`the menu is now ${this.state.menu}`)
+      this.setState({menu : 'open'}, () =>{
+      console.log(`the menu is now ${this.state.menu}`)})
     } 
     if(this.state.menu === 'open'){
       this.setState({menu: 'closed'})

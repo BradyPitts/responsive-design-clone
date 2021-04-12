@@ -61,9 +61,16 @@ nav img{
   color: white;
   background-color:black;
   width:50vw;
-  height: 50vh;
+  /* height: 25vh; */
   animation-name: opensaysme;
   animation-duration: 1000ms;
+  position: relative;
+  z-index: 500;
+}
+
+.open li{
+  position: relative;
+  z-index: 1001;
 }
 
 
