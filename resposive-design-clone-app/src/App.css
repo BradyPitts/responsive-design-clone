@@ -28,7 +28,7 @@ header h3{
   color: #ffcc00;
 }
 
-header nav{
+header nav ul li{
   width:35%;
   display: flex;
   justify-content: space-around;
@@ -45,15 +45,26 @@ nav img{
   display: none;
 }
 
-.open {
-  display: block;
-  background-color:black;
-  transform: translate(100vw);
-  width:75vw;
-  height: 100vh;
+@keyframes opensaysme{
+  from{
+    transform:translate(100%);
+    opacity: 0;
+  }
+  to{
+    transform:translate(0%);
+    opacity: 1;
+  }
 }
 
-
+.open {
+  display: block;
+  color: white;
+  background-color:black;
+  width:50vw;
+  height: 50vh;
+  animation-name: opensaysme;
+  animation-duration: 1000ms;
+}
 
 
 
@@ -100,11 +111,10 @@ button{
     display: none;
   }
 
-  nav ul{
-    width: 35vw;
+  .closed{
     display: flex;
-    justify-content: space-around;
-    transform: translate(100vw);
+    width: 35vw;
+    justify-content: space-between;
   }
 
   button{
